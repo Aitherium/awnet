@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awnet"
+version = "0.1.0"
+description = "A peer registry and reachability layer — which peers exist, and can I reach one? It detects three distinct states: unknown, unreachable, and unable-to-check. It is NOT a VPN implementation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+# No external dependencies by design. A fabric layer that cannot be read or
+# probed without adding a dozen transitive deps is one nobody debugs during an
+# incident. ONLY the stdlib.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+awnet = "awnet.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Aitherium/awnet"
+Documentation = "https://github.com/Aitherium/awnet#readme"
+Repository = "https://github.com/Aitherium/awnet.git"
+Issues = "https://github.com/Aitherium/awnet/issues"
+
+[tool.setuptools]
+packages = ["awnet"]
