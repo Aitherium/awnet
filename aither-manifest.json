@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "name": "awnet",
+  "description": "The agentic web — agents host a mesh, and agents join one.",
+  "url": "https://aitherium.github.io/awnet/",
+  "repository": "https://github.com/Aitherium/awnet",
+  "kind": "runtime",
+  "status": "public",
+  "adopt": "Host a mesh on one machine and join it from another.",
+  "pairs_with": [
+    "awnode",
+    "awdk",
+    "awrelay"
+  ],
+  "includes": [],
+  "metrics": {
+    "files": {
+      "value": 13,
+      "as_of": "2026-08-22T08:32:41-07:00"
+    },
+    "tests": {
+      "value": 2,
+      "as_of": "2026-08-22T08:32:41-07:00"
+    }
+  }
+}
