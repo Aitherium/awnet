@@ -23,8 +23,16 @@ import sys
 #: package cannot read the registry, and a doctor that guessed at the family
 #: would go stale in silence. Regenerate to update.
 SELF = 'awnet'
-FAMILY = ['awask', 'awavatar', 'awbac', 'awbrain', 'awbrowse', 'awcams', 'awclassify', 'awdecide', 'awdeck', 'awdelphi', 'awdit', 'awembed', 'awevolve', 'awfind', 'awflow', 'awfocus', 'awgit', 'awgraph', 'awgym', 'awiam', 'awkno', 'awm', 'awmail', 'awmine', 'awnboard', 'awnest', 'awnode', 'awpool', 'awpredict', 'awprism', 'awprove', 'awreason', 'awrecover', 'awrecurse', 'awrelay', 'awrena', 'awrepl', 'awreport', 'awresearch', 'awrise', 'awrouter', 'awrtifact', 'awrun', 'awscope', 'awscreen', 'awseal', 'awsettings', 'awshare', 'awsprite', 'awstorage', 'awsuite', 'awswarm', 'awtax', 'awtoll', 'awtunnel', 'awvision', 'awvoice', 'awwall', 'gawbbonet']
-PAIRS_WITH = ['adk', 'awnode', 'awrelay', 'awswarm', 'awwall']
+FAMILY = [
+    'awask', 'awavatar', 'awbac', 'awbrain', 'awbrowse', 'awcams', 'awclassify', 'awdecide',
+    'awdeck', 'awdelphi', 'awdit', 'awembed', 'awevolve', 'awfind', 'awflow', 'awfocus', 'awgit',
+    'awgraph', 'awgym', 'awiam', 'awkno', 'awm', 'awmail', 'awmine', 'awnboard', 'awnest', 'awplay',
+    'awpool', 'awpredict', 'awprism', 'awprove', 'awreason', 'awrecover', 'awrecurse', 'awrelay',
+    'awrena', 'awrepl', 'awreport', 'awresearch', 'awrise', 'awrouter', 'awrtifact', 'awrun',
+    'awscope', 'awscreen', 'awseal', 'awsettings', 'awshare', 'awsprite', 'awstorage', 'awsuite',
+    'awswarm', 'awtax', 'awtoll', 'awtunnel', 'awvision', 'awvoice', 'awwall', 'gawbbonet',
+]
+PAIRS_WITH = ['adk', 'awrelay', 'awswarm', 'awwall']
 
 #: This brick's OWN config, read out of its source at generation time.
 #: ENV_REQUIRED is `os.environ["X"]` -- absent, that is a KeyError the moment
